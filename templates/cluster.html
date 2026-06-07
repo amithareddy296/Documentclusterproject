@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Document Clusters</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <h1>📂 Document Clusters</h1>
+
+    <table>
+
+        <tr>
+
+            <th>Cluster / Topic</th>
+
+        </tr>
+
+        {% for topic in topics %}
+
+        <tr>
+
+            <td>{{topic.topic}}</td>
+
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    <br>
+
+    <a href="/">
+
+        <button class="btn">
+
+            Back To Home
+
+        </button>
+
+    </a>
+
+</body>
+
+</html>
